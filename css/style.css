@@ -20,7 +20,8 @@ Palette:
 
 /* Pixelify Sans [logo] */
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Playfair+Display&family=Roboto&display=swap');
-/* Pixelify Sans [generic] */
+
+/* Roboto Mono [generic] */
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Playfair+Display&family=Roboto&family=Roboto+Mono&display=swap');
 
 *{
@@ -201,7 +202,6 @@ form button:hover{
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin: 0 auto;
 }
 article{
     display: flex;
@@ -286,6 +286,7 @@ footer{
 *:required:valid{
     border: 2px solid lime;
 }
+
 @media (width <= 480px) {
     .article-container{
         flex-direction: column;
