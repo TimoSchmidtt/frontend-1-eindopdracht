@@ -1,6 +1,34 @@
+/*
+    Colors: 
+
+https://coolors.co/palette/000000-14213d-fca311-e5e5e5-ffffff
+
+Palette:
+
+#FFFFFF
+#E5E5E5
+#FCA311
+#14213D
+#000000
+
+    "dark": 000000
+    "!dark": FFFFFF
+    "background": E5E5E5
+    "background-light": light-grey
+    "Extra": 14213D/FCA311
+*/
+
+/* Pixelify Sans [logo] */
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Playfair+Display&family=Roboto&display=swap');
+/* Pixelify Sans [generic] */
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Playfair+Display&family=Roboto&family=Roboto+Mono&display=swap');
+
+*{
+    font-family: 'Roboto Mono', monospace;
+    box-sizing: border-box;
+}
 body{
     margin: 0;
-    box-sizing: border-box;
 }
 nav{
     display: flex;
@@ -8,53 +36,75 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 2vh 2vw;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #FCA311;
 }
 a{
     text-decoration: none;
-    color: black;
+    color: #FCA311;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 5px;
 }
 a:hover{
-
+    border: 2px solid #FCA311;
+}
+h1{
+    font-family: 'Pixelify Sans';    
+}
+.logo-link{
+    border: none;
+    font-family: 'Pixelify Sans';
+}
+.logo-link:hover{
+    border: none;
 }
 .special-link{
     color: white;
-    background-color: black;
-    border: 2px solid black;
+    background-color: #FCA311;
+    border: 2px solid #FCA311;
     padding: 5px;
     border-radius: 5px;
 }
 .special-link:hover{
-    color: black;
+    color: #FCA311;
     background-color: white;
-    border: 2px solid black;
-    padding: 5px;
-    border-radius: 5px;
+    border: 2px solid #FCA311;
 }
-#left-nav{
+.logo-img{
+    display: flex;
+    align-items: center;
+    gap: 20px;
     padding: 10px 15px;
-    border: 2px solid black;
-    background-color: black;
+    border: 2px solid #FCA311;
+    background-color: #FCA311;
     color: white;
-    border-radius: 5vw;
+    border-radius: 5px;
+    max-width: fit-content;
+    object-fit: cover;
 }
-#left-nav a{
+.logo-img img{
+    overflow:visible;
+    width: 25px;
+    border-radius: 15px;
+}
+.logo-img a{
     color: white;
 }
-#left-nav:hover{
+.logo-img:hover{
     cursor: pointer;
 }
-#right-nav{
+.right-nav{
     display: flex;
     align-items: center;
     gap: 20px;
 }
 header{
+    color: white;
     padding: 15vh 15vw;
     text-align: center;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #FCA311;
 
-    background-image: url("../images/test.jpg");
+    background-image: url("../images/background.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -63,4 +113,201 @@ header{
     gap: 10px;
     justify-content: center;
     align-items: center;
+}
+.secondary-button{
+    color: white;
+    padding: 5px;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+.secondary-button:hover{
+    color: white;
+    border: 2px solid gray;
+    background-color: gray;
+}
+section{
+    text-align: center;
+}
+#form-container {
+    padding: 30px 0px;
+    background-color: lightgray;
+}
+form{
+    margin: 0 auto;
+    width: 90vw;
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: left;
+}
+.formfield{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    flex: 1;
+    gap: 5px;
+}
+.formfield-double{
+    display: flex;
+    gap: 1vw;
+}
+.formfield input,
+.formfield select{
+    padding: 10px 0px;
+    padding-left: 5px;
+    width: 100%;    
+    border-radius: 5px;
+}
+.formfield-message{
+    font-weight: bold;
+    text-align: left;
+}
+.formfield div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.formfield .newsletter{
+    display: flex;
+    flex-direction: row;
+    font-weight: normal;
+    width: 1rem;
+    gap: 10px;
+}
+textarea{
+    width: 100%;
+    height: 20vh;
+    border-radius: 5px;
+}
+form button{
+    padding: 15px 10px; 
+    background-color: #14213D;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+form button:hover{
+    background-color: white;
+    color: #14213D;
+}
+#locations{
+    padding: 5vh;
+}
+.article-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 0 auto;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border: 2px solid #FCA311;
+    border-radius: 5px;
+    flex: 1;
+    width: 100%;
+    max-width: 20vw;
+    transition: all 0.5s;
+}
+article div{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+article img{
+    object-fit: cover;
+    height: 100%;
+    max-height: 200px;
+    border-bottom: 2px solid #FCA311;
+}
+.stars{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+}
+.stars img{
+    border: none;
+    width: 20px;
+    max-height: 100%;
+}
+article:hover{
+    background-color: #FCA311;
+    border-color: gray;
+    color: white;
+    max-width: 30vw;
+}
+article:hover img{
+    border-color: gray;
+}
+article:hover .special-link{
+    background-color: white;
+    color: #FCA311;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    margin: 0;
+}
+footer{
+    padding: 3vh;
+    display: flex;
+    background-color: #14213D;
+    color: lightgray;
+    gap: 20vw;
+    justify-content: space-around;
+    align-items: center;
+}
+.right-footer a{
+    color: gray;
+    border: none;
+}
+.right-footer a:hover{
+    border-color: gray;
+}
+.socials img{
+    overflow: visible;
+    width: 3vw;
+    background-color: white;
+    border-radius: 30%;
+}
+.socials img:hover{
+    cursor: pointer;
+}
+*:required:invalid{
+    border: 2px solid red;
+}
+*:required:valid{
+    border: 2px solid lime;
+}
+@media (width <= 480px) {
+    .article-container{
+        flex-direction: column;
+    }
+    article{
+        max-width: 100%;
+    }
+    .formfield-double{
+        flex-direction: column;
+        gap: 30px;
+    }
+    footer{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    .socials img{
+        width: 12%;
+    }
+    .right-footer{
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+    }
 }

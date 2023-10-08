@@ -12,36 +12,176 @@
 <body>
 
     <nav>
-        <div id="left-nav">
-            <img src="#" alt=Logo>
-            <a id="logo-link">Brand</a>
+        <div class="logo-img">
+            <img src="images/planet.png" alt=Logo>
+            <a class="logo-link">Explore & Rate</a>
         </div>
-        <div id="right-nav">
-            <a href="#">Link</a>
-            <a href="#">Link</a>
-            <a href="#">Link</a>
-            <a href="#">Link</a>
-            <a href="#" class="special-link">Link</a>
+        <div class="right-nav">
+            <a href="#locations">Locaties</a>
+            <a href="#form-container" class="special-link">Bericht</a>
         </div>
     </nav>
 
-    <header>
-        <h1>Headline goes here.</h1>
-        <p>Someone put a headline up there...</p>
+    <header id="headline">
+        <h1>Explore & Rate</h1>
+        <p>Dé one-stop-shop voor alle locaties!</p>
         <div id="buttons-header">
-            <a href="#" class="special-link">Link</a>
-            <a href="#">Link</a>
+            <a href="#locations" class="special-link">Locaties</a>
+            <a href="#form-container" class="secondary-button">Bericht</a>
         </div>
     </header>
 
     <main>
-        <section>
+        <section id="locations">
+            <h2>Locaties</h2>
+            <div class="article-container">
+                <article>
+                    <img src="images/luna.jpg">
+                    <div>
+                        <h3>Luna</h3>
+                        <div class="stars">
+                            <img src="images/star-filled.png">
+                            <img src="images/star-filled.png">
+                            <img src="images/star-filled.png">
+                            <img src="images/star-empty.png">
+                            <img src="images/star-empty.png">
+                        </div>
+                        <p>Luna, onze dichtstbijzijnde buur in de ruimte, is een mysterieuze en betoverende
+                            bestemming
+                            voor ruimteliefhebbers. Deze
+                            maan, die om onze planeet cirkelt, is gehuld in een rustige stilte en wordt gekenmerkt
+                            door
+                            uitgestrekte kraters...</p>
+                        <a href="#" class="special-link">Lees meer...</a>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/venus.jpg">
+                    <div>
+                        <h3>Venus</h3>
+                        <div class="stars">
+                            <img src="images/star-filled.png">
+                            <img src="images/star-filled.png">
+                            <img src="images/star-empty.png">
+                            <img src="images/star-empty.png">
+                            <img src="images/star-empty.png">
+                        </div>
+                        <p>Venus, de tweede planeet van ons zonnestelsel, biedt een onthutsende ervaring voor de
+                            onverschrokken reiziger. Met een
+                            oppervlaktetemperatuur die heet genoeg is om lood te smelten en een verstikkende
+                            atmosfeer van...</p>
 
+                        <a href="#" class="special-link">Lees meer...</a>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/terra.jpg">
+                    <div>
+                        <h3>Terra</h3>
+                        <div class="stars">
+                            <img src="images/star-filled.png">
+                            <img src="images/star-filled.png">
+                            <img src="images/star-filled.png">
+                            <img src="images/star-filled.png">
+                            <img src="images/star-empty.png">
+                        </div>
+                        <p>Terra, beter bekend als de Aarde, is een adembenemende bestemming die ons elke dag
+                            verrast met haar ongeëvenaarde
+                            schoonheid en diversiteit. Van de uitgestrekte oceanen tot de majestueuze...
+                        </p>
+                        <a href="#" class="special-link">Lees meer...</a>
+                </article>
+            </div>
         </section>
+
+        <section id="form-container">
+            <h2>Stuur ons een bericht!</h2>
+            <form>
+                <div class="formfield-double">
+                    <div class="formfield">
+                        <label for="first-name">Voornaam</label>
+                        <input type="text" name="first-name" id="first-name" placeholder="Voornaam" required>
+                    </div>
+                    <div class="formfield">
+                        <label for="last-name">Achternaam</label>
+                        <input type="text" name="last-name" id="last-name" placeholder="Achternaam" required>
+                    </div>
+                </div>
+
+                <div class="formfield">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                </div>
+
+                <div class="formfield-double">
+                    <div class="formfield">
+                        <label for="city">Woonplaats</label>
+                        <input type="text" name="city" id="city" placeholder="Woonplaats" required>
+                    </div>
+                    <div class="formfield">
+                        <label for="birthdate">Geboortedatum</label>
+                        <input type="date" name="birthdate" id="birthdate" required>
+                    </div>
+                </div>
+
+                <div class="formfield">
+                    <label for="send-to">Onderwerp</label>
+                    <select id="send-to" name="send-to" required>
+                        <option value="">Kies het onderwerp van het bericht...</option>
+                        <option value="0">Luna</option>
+                        <option value="1">Venus</option>
+                        <option value="2">Terra</option>
+                        <option value="3">Anders...</option>
+                    </select>
+                </div>
+
+                <div class="formfield">
+                    <label for="question">Bericht</label>
+                    <textarea name="question" required></textarea>
+                </div>
+
+                <div class="formfield">
+                    <label for="newsletter">Inschrijven voor nieuwsbrief</label>
+                    <div class="newsletter">
+                        <input type="radio" id="general" name="newsletter" value="ja" required>
+                        <label for="ja">Ja</label>
+                    </div>
+                    <div class="newsletter">
+                        <input type="radio" id="programming" name="newsletter" value="nee" required>
+                        <label for="nee">Nee</label>
+                    </div>
+                </div>
+
+                <div class="terms">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">Ik ga akkoord met de algemene voorwaarden</label>
+                </div>
+
+                <button type="submit">Vestuur e-mail</button>
+            </form>
+        </section>
+
     </main>
 
     <footer>
-
+        <div class="left-footer">
+            <div class="logo-img">
+                <img src="images/planet.png" alt=Logo>
+                <a class="logo-link">Explore & Rate</a>
+            </div>
+            <p>Copyright 2023 Explore & Rate</p>
+            <div class="socials">
+                <img src="images/instagram.png" alt="instagram">
+                <img src="images/facebook.png" alt="facebook">
+                <img src="images/snapchat.png" alt="snapchat">
+            </div>
+        </div>
+        <div class="right-footer">
+            <a href="#">Privacyverklaring</a>
+            <a href="#">Algemene voorwaarden</a>
+            <a href="#">Cookiebeleid</a>
+            <a href="#">Contact</a>
+        </div>
     </footer>
 
 </body>
